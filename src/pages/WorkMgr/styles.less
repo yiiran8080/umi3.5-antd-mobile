@@ -1,0 +1,44 @@
+.header {
+    padding: 12px;
+    background: var(--adm-color-background);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    .left {
+      flex: auto;
+    }
+    .right {
+      flex: none;
+      padding-left: 12px;
+    }
+  }
+  
+  .placeholder {
+    padding-top: 30vh;
+    text-align: center;
+    color: var(--adm-color-weak);
+    .loadingWrapper {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .list{
+    :global{
+        .adm-list-body-inner{
+            font-size: 12px;
+          }
+    }
+  }
+  .filterForm{
+    label,input{
+      font-size: 15px;
+    }
+    :global{
+      .adm-space-item{
+        font-size: 15px;
+      }
+    }
+  }

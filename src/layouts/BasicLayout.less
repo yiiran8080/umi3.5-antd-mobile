@@ -1,0 +1,155 @@
+.app {
+  height: 83vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a{
+    color:#1e98c1 !important
+  }
+}
+
+.top {
+  flex: 0;
+  border-bottom: solid 1px var(--adm-color-border);
+}
+
+.body {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction:column;
+}
+
+.bottom {
+  flex: 0;
+  border-top: solid 1px var(--adm-color-border);
+  position: fixed;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  :global{
+    .adm-tab-bar{
+      width: 100%;
+    }
+    .adm-tab-bar-item-active{
+      color:#1e98c1 !important
+    }
+  }
+}
+.topHeader {
+  :global {
+    .ant-tabs-tab {
+      font-size: 13px;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab {
+      padding: 4px 6px;
+      border-radius: 0;
+      border: 0;
+      background: #fafafa;
+    }
+
+    .ant-tabs-tab-remove {
+      font-size: 10px;
+      border-right: 1px #f5ecec solid;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab:not(:last-of-type) {
+      margin-left: -1px;
+    }
+
+    .ant-tabs-tab-active {
+      .ant-tabs-tab-remove {
+        color: @primary-color;
+      }
+    }
+
+    .ant-tabs-tab:hover {
+      .ant-tabs-tab-remove {
+        color: @primary-color;
+      }
+    }
+
+    .ant-tabs-nav {
+      padding: 0 10px;
+    }
+
+    .ant-tabs-nav::before {
+      border: 0;
+    }
+  }
+}
+
+.bly {
+  height: 100vh;
+  position: relative;
+
+  :global {
+    .ant-layout-header {
+      display: none;
+    }
+  }
+}
+
+.avt {
+  position: fixed;
+  z-index: 500;
+  left: 6px;
+  // color: #a59696;
+  bottom: 60px;
+}
+.infoLogo{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+  color: #666;
+  font-weight: bold;
+}
+// .ckm {
+//   background-color: #5a5c63;
+//   color: #fff;
+
+//   :global {
+//     .ant-menu-submenu {
+//       margin-left: -8px;
+//     }
+
+//     .ant-menu-submenu>.ant-menu {
+//       background-color: #5a5c63;
+//       color: #fff;
+//       overflow-y: scroll;
+//       overflow-x: hidden;
+//       max-height: 700px;
+//     }
+
+//     .ant-menu-submenu-selected {
+//       color: #fff
+//     }
+
+//     .ant-menu-submenu-arrow {
+//       margin-right: 6px;
+//     }
+//   }
+
+// }
+
+// .sol {
+//   position: absolute;
+//   z-index: 100;
+//   right: 48px;
+//   top: 16px;
+//   font-size: 16px;
+//   color: #9fa4b5
+// }
+
+.sol:hover {
+  color: #fff;
+}
