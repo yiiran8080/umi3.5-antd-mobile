@@ -43,7 +43,7 @@ react@16.8.6
 ```javascript
 
 // 安装项目
-$ git clone --depth=1 https://github.com/hqwlkj/umi-dva-antd-mobile.git my-project
+$ git clone [https://github.com/hqwlkj/umi-dva-antd-mobile.git](https://github.com/yiiran8080/umi3.5-antd-mobile.git) my-project
 
 $ cd my-project
 
